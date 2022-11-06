@@ -40,6 +40,29 @@ a {
   color: inherit;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  min-width: 170px;
+  height: 40px;
+  padding: 0.25em 1em;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 40px;
+}
+
+.btn--primary {
+  background-color: var(--color-white);
+  border-color: var(--color-pink);
+}
+
+.btn--secondary {
+  background-color: var(--color-pink);
+  border-color: var(--color-white);
+}
+
 .container {
   width: min(100% - var(--gap) * 2, var(--container-width));
   margin-inline: auto;
@@ -99,16 +122,6 @@ a {
 .feedback__phone {
   font-size: 1rem;
   line-height: 19px;
-  color: var(--color-black);
-}
-
-.feedback__button {
-  line-height: 16px;
-  background: var(--color-white);
-  border: 2px solid var(--color-pink);
-  border-radius: 40px;
-  min-width: 170px;
-  height: 40px;
 }
 
 .navbar-primary {
@@ -123,10 +136,45 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0 20px;
+  gap: 0 var(--gap);
 }
 
 .navbar-primary__link {
   display: block;
   padding: 7px 10px;
+  font-size: 1rem;
+  color: var(--color-black);
+  font-size: 1rem;
 }
+
+.hero {
+  background-color: var(--color-pink);
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: 68% 50%;
+  background-size: contain;
+  color: var(--color-white);
+  padding: 192px 0;
+  margin-bottom: 80px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xl);
+  max-width: 377px;
+}
+
+.hero__title {
+  font-size: 48px;
+  line-height: 56px;
+  margin: 0;
+}
+
+.hero__description {
+  line-height: 1.43;
+  margin-bottom: 4px;
+}
+
+.hero__action {}
