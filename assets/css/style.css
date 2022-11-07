@@ -85,6 +85,14 @@ a {
   color: var(--color-white);
 }
 
+.btn--sg {
+  min-width: 130px;
+  height: 35px;
+  background-color: var(--color-pink);
+  border-color: var(--color-pink);
+  color: var(--color-white);
+}
+
 
 .container {
   width: min(100% - var(--gap) * 2, var(--container-width));
@@ -167,7 +175,6 @@ a {
   padding: 7px 10px;
   font-size: 1rem;
   color: var(--color-black);
-  font-size: 1rem;
 }
 
 .hero {
@@ -214,7 +221,6 @@ a {
 .offers__content {
   display: flex;
   gap: var(--gap-lg);
-
 }
 
 .offer-item {
@@ -225,7 +231,6 @@ a {
   gap: var(--gap);
   align-items: center;
   flex: 1;
-
 }
 
 .offer-item__title {
@@ -269,8 +274,6 @@ a {
   background-position: calc(100% - 45px) 50%;
   flex: 1;
   padding: 35px var(--gap-xl);
-
-
 }
 
 .subscribe__content {
@@ -278,7 +281,6 @@ a {
   flex-direction: column;
   gap: 25px;
   max-width: 250px;
-
 }
 
 .subscribe__title {
@@ -289,7 +291,6 @@ a {
 .subscribe__description {
   font-size: 14px;
   line-height: 20px;
-
 }
 
 .subscribe__form {
@@ -298,7 +299,7 @@ a {
 
 .subscribe__input {
   padding: 0.25em 1em;
-  display: flex;
+  display: block;
   width: 100%;
   border-radius: 30px;
   border: none;
@@ -316,7 +317,6 @@ a {
   background-position: calc(100% - 45px) 50%;
   flex: 1;
   padding: 35px var(--gap-xl);
-
 }
 
 .our-shops__content {
@@ -354,4 +354,48 @@ a {
   background-color: var(--color-white);
   padding: 35px;
   text-align: center;
+}
+
+.goods {
+  margin-bottom: 100px;
+}
+
+.goods__title {
+  font-size: 1.5rem;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: var(--gap-lg);
+}
+
+.goods__content {
+  display: flex;
+  gap: var(--gap-lg);
+}
+
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  padding: 25px;
+  gap: var(--gap);
+  align-items: center;
+  flex: 1;
+}
+
+.goods-item__title {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 20px;
+  text-align: center;
+}
+
+.goods-item__picture {
+  order: -1;
+}
+
+.goods-item__img {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
 }
