@@ -1,0 +1,25 @@
+@use "../variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+body {
+  font-size: 0.875rem;
+  background-color: $color-light;
+  color: $color-gray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

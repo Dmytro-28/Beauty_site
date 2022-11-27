@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+.our-shops {
+  background-color: $color-pink;
+  background-image: url(../img/car.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 45px) 50%;
+  flex: 1;
+  padding: 35px $gap-xl;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 250px;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__actions {
+    display: flex;
+  }
+}

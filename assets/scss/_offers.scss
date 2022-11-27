@@ -1,0 +1,45 @@
+@use "variables" as *;
+
+.offers {
+  margin-bottom: 100px;
+
+  &__title {
+    font-size: 1.5rem;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: $gap-lg;
+  }
+
+  &__content {
+    display: flex;
+    gap: $gap-lg;
+  }
+}
+
+.offer-item {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  padding: 25px;
+  gap: $gap;
+  align-items: center;
+  flex: 1;
+
+  &__title {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  &__picture {
+    order: -1;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+  }
+}

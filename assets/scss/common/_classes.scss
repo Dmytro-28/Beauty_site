@@ -1,0 +1,59 @@
+@use "../variables" as *;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  min-width: 170px;
+  height: 40px;
+  padding: 0.25em 1em;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 40px;
+
+  &--primary {
+    background-color: $color-white;
+    border-color: $color-pink;
+  }
+
+  &--secondary {
+    background-color: $color-pink;
+    border-color: $color-white;
+  }
+
+  &--sm {
+    min-width: 130px;
+    height: 35px;
+    background-color: $color-pink;
+    border-color: $color-pink;
+    color: $color-white;
+  }
+
+  &--sg {
+    min-width: 130px;
+    height: 35px;
+    background-color: $color-pink;
+    border-color: $color-pink;
+    color: $color-white;
+  }
+}
+
+.container {
+  width: min(100% - $gap * 2, $container-width);
+  margin-inline: auto;
+}

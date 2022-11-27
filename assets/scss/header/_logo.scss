@@ -1,0 +1,17 @@
+@use "../variables" as *;
+
+.logo {
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: $color-pink;
+  }
+}

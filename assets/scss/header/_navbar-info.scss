@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+.navbar-info {
+  background-color: $color-white;
+  margin-bottom: 1px;
+  padding: $gap;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

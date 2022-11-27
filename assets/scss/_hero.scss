@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+.hero {
+  background-color: $color-pink;
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: 68% 50%;
+  background-size: contain;
+  color: $color-white;
+  padding: 192px 0;
+  margin-bottom: 80px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $gap-xl;
+    max-width: 377px;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+  }
+
+  &__description {
+    line-height: 1.43;
+    margin-bottom: 4px;
+  }
+}

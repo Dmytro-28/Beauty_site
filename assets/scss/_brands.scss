@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+.brands {
+  margin-bottom: 80px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+}
+
+.brand-item {
+  background-color: $color-white;
+  padding: 35px;
+  text-align: center;
+}
